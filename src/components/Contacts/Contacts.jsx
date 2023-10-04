@@ -1,7 +1,7 @@
 import Contact from 'components/Contact/Contact';
 import { List } from './Contacts.styled';
 
-const Contacts = ({ contacts, onDeleteContact }) => {
+export const Contacts = ({ contacts, onDeleteContact }) => {
   return (
     <List>
       {contacts.map(({ id, name, number }) => (
@@ -17,4 +17,4 @@ const Contacts = ({ contacts, onDeleteContact }) => {
   );
 };
 
-export default Contacts;
+
